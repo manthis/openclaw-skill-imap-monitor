@@ -1,3 +1,10 @@
+---
+name: imap-monitor
+description: "Monitor IMAP email inbox for new messages with optional sender/subject filters. Use when asked to check emails, monitor a mailbox, or get alerts for new mail via IMAP (supports Proton Bridge, Gmail, etc)."
+homepage: https://github.com/manthis/openclaw-skill-imap-monitor
+metadata: { "openclaw": { "emoji": "📧", "requires": { "bins": ["python3"] } } }
+---
+
 # openclaw-skill-imap-monitor
 
 Generic IMAP email monitor. Polls for unread emails with optional filters, tracks state to avoid duplicate alerts.

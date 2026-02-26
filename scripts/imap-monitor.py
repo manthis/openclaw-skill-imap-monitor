@@ -87,6 +87,8 @@ def connect():
         conn = imaplib.IMAP4(IMAP_HOST, IMAP_PORT)
         if IMAP_STARTTLS:
             ctx = ssl.create_default_context()
+            ctx.check_hostname = False
+            ctx.verify_mode = ssl.CERT_NONE
             conn.starttls(ssl_context=ctx)
 
     conn.login(IMAP_USER, IMAP_PASS)
